@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "CodeType";
+  src: url("CodeType.woff2") format("woff2");
+}
+@font-face {
+  font-family: "LogoText";
+  src: url("LogoText.woff2") format("woff2");
+}
+@font-face {
+  font-family: "BodyText";
+  src: url("BodyText.woff2") format("woff2");
+}
+
+hr {
+  margin: 3px 0 3px 0;
+}
+
+.CodeMirror {
+  height: auto !important;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 95px;
+}
+
+.limited-height {
+  height: calc(100vh - 100px);
+}
+
+.code-text {
+  font-family: "CodeType";
+  font-size: 12pt;
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+.badge-background {
+  padding: 3px;
+  border-radius: 0px;
+  border: none;
+}
+
+.badge-clickable {
+  padding: 3px;
+  border-radius: 0px;
+  border: none;
+}
+
+.badge-clickable:hover {
+  background: #dedede;
+  padding: 3px;
+  border-radius: 0px;
+  border: none;
+}
+
+.badge-clickable:focus {
+  outline: 0;
+  outline-offset: 0;
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.badge-centered {
+  position: relative;
+  top: -1px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 0;
+}
+
+.logo-text {
+  font-family: "LogoText";
+  font-size: 26pt;
+}
+
+.title-text {
+  font-family: "LogoText";
+  font-size: 20pt;
+}
+
+.body-text-14 {
+  font-family: "BodyText";
+  font-size: 14pt;
+}
+.body-text-12 {
+  font-family: "BodyText";
+  font-size: 12pt;
+}
+
+.square-border {
+  border-radius: 0px;
+  border: none;
+  border-color: white;
+  resize: none;
+}
+
+.code-container {
+  /* border: 7px solid #151515;
+  border-radius: 0px;
+  resize: none;
+  margin-top: 0px; */
+}
+
+.dark-color {
+  background: #151515;
+}
+
+.dark-color-icon {
+  color: #151515;
+}
+
+.light-color {
+  background: #f2f2f2;
+}
+
+body {
+  background-color: #dedede;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.row.grid-15-gutter {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+.row.grid-15-gutter [class*="col-"] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.hover-accent:hover {
+  background: #f2f2f2;
+}
+
+.border-left-3 {
+  border-left: 5px #dedede solid;
+  max-width: 100% - 20px;
+}
+
+.edit-btn {
+  position: absolute;
+  right: 7.5px;
+  bottom: 7.5px;
+}
+
+.scrollable-list {
+  height: calc(100vh - 180px);
+  overflow-y: scroll;
+  direction: rtl;
+  position: relative;
+  left: -5px;
+  margin: 0 -5px;
+}
+
+.short-scrollable-list {
+  height: calc(100vh - 210px);
+}
+
+.flipped {
+  direction: ltr;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+.forgot-password-button {
+  padding: 0;
+  background-color: white;
+  border: none;
+}
+
+.block {
+  display: block;
+}
+
+.like-switch-position {
+  position: absolute;
+  top: -8px;
+  margin: 0px;
+}
+
+.like-switch-label-position {
+  position: absolute;
+  top: 47px;
+  margin: 0px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 3px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
