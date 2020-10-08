@@ -1,16 +1,3 @@
-@font-face {
-  font-family: "CodeType";
-  src: url("CodeType.woff2") format("woff2");
-}
-@font-face {
-  font-family: "LogoText";
-  src: url("LogoText.woff2") format("woff2");
-}
-@font-face {
-  font-family: "BodyText";
-  src: url("BodyText.woff2") format("woff2");
-}
-
 hr {
   margin: 3px 0 3px 0;
 }
@@ -34,7 +21,8 @@ hr {
 }
 
 .code-text {
-  font-family: "CodeType";
+  /*font-family: "CodeType";*/
+  font-family: Consolas, monaco, monospace;
   font-size: 12pt;
 }
 
@@ -78,21 +66,23 @@ hr {
 }
 
 .logo-text {
-  font-family: "LogoText";
+  /*font-family: "LogoText";*/
+  font-family: Consolas, monaco, monospace;
   font-size: 26pt;
 }
 
 .title-text {
-  font-family: "LogoText";
+  /*font-family: "LogoText";*/
+  font-family: Consolas, monaco, monospace;
   font-size: 20pt;
 }
 
 .body-text-14 {
-  font-family: "BodyText";
+  /*font-family: "BodyText";*/
   font-size: 14pt;
 }
 .body-text-12 {
-  font-family: "BodyText";
+  /*font-family: "BodyText";*/
   font-size: 12pt;
 }
 
